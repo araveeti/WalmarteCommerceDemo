@@ -1,0 +1,8 @@
+com/walmart/ecom/ui/core/CustomAssersion.class
+com/walmart/ecom/ui/core/ExcelHandler.class
+com/walmart/ecom/ui/core/WalmartTestBase$TestDataFaactory.class
+com/walmart/ecom/ui/pages/HomePage.class
+com/walmart/ecom/ui/core/SeleniumMethods.class
+com/walmart/ecom/ui/pages/AutomotivePage.class
+com/walmart/ecom/ui/pages/AppliancePage.class
+com/walmart/ecom/ui/core/WalmartTestBase.class
