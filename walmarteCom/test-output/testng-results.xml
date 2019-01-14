@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Application" duration-ms="25424" started-at="2019-01-14T03:59:30Z" finished-at="2019-01-14T03:59:56Z">
+  <suite name="Application" duration-ms="72039" started-at="2019-01-14T04:20:58Z" finished-at="2019-01-14T04:22:10Z">
     <groups>
     </groups>
-    <test name="WalmartEcommerce" duration-ms="25424" started-at="2019-01-14T03:59:30Z" finished-at="2019-01-14T03:59:56Z">
+    <test name="WalmartEcommerce" duration-ms="72039" started-at="2019-01-14T04:20:58Z" finished-at="2019-01-14T04:22:10Z">
       <class name="com.walmart.ecom.ui.tests.ToysSectionTests">
-        <test-method status="PASS" signature="loadClassConfigurations(java.lang.String)[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="loadClassConfigurations" is-config="true" duration-ms="28" started-at="2019-01-14T03:59:30Z" finished-at="2019-01-14T03:59:30Z">
+        <test-method status="PASS" signature="loadClassConfigurations(java.lang.String)[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="loadClassConfigurations" is-config="true" duration-ms="26" started-at="2019-01-14T04:20:58Z" finished-at="2019-01-14T04:20:58Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadClassConfigurations -->
-        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="beforeEachTest" is-config="true" duration-ms="2182" started-at="2019-01-14T03:59:31Z" finished-at="2019-01-14T03:59:33Z">
+        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="beforeEachTest" is-config="true" duration-ms="2292" started-at="2019-01-14T04:20:59Z" finished-at="2019-01-14T04:21:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="verifyItemsDisplayedByPrice(java.util.Properties)[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="verifyItemsDisplayedByPrice" duration-ms="22422" started-at="2019-01-14T03:59:33Z" data-provider="loadTestData" finished-at="2019-01-14T03:59:56Z">
+        <test-method status="PASS" signature="verifyItemsDisplayedByPrice(java.util.Properties)[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="verifyItemsDisplayedByPrice" duration-ms="22502" started-at="2019-01-14T04:21:01Z" data-provider="loadTestData" finished-at="2019-01-14T04:21:24Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyItemsDisplayedByPrice -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="tearDown" is-config="true" duration-ms="188" started-at="2019-01-14T03:59:56Z" finished-at="2019-01-14T03:59:56Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="tearDown" is-config="true" duration-ms="128" started-at="2019-01-14T04:21:24Z" finished-at="2019-01-14T04:21:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="beforeEachTest" is-config="true" duration-ms="1269" started-at="2019-01-14T04:21:24Z" finished-at="2019-01-14T04:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method status="PASS" signature="verifyProductDetails(java.util.Properties)[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="verifyProductDetails" duration-ms="22520" started-at="2019-01-14T04:21:25Z" data-provider="loadTestData" finished-at="2019-01-14T04:21:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="tearDown" is-config="true" duration-ms="185" started-at="2019-01-14T04:21:48Z" finished-at="2019-01-14T04:21:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="beforeEachTest" is-config="true" duration-ms="1133" started-at="2019-01-14T04:21:48Z" finished-at="2019-01-14T04:21:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method status="PASS" signature="verifyProductDetails(java.util.Properties)[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="verifyProductDetails" duration-ms="20660" started-at="2019-01-14T04:21:49Z" data-provider="loadTestData" finished-at="2019-01-14T04:22:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.walmart.ecom.ui.tests.ToysSectionTests@271053e1]" name="tearDown" is-config="true" duration-ms="140" started-at="2019-01-14T04:22:10Z" finished-at="2019-01-14T04:22:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

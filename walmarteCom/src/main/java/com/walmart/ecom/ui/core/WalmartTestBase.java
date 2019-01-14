@@ -77,7 +77,7 @@ public class WalmartTestBase {
 	@BeforeSuite
 	public void loadClassConfigurations(String configfile) throws IOException {
 		aConfile = this.getPropertiesFromFile(configfile);
-		aTestDataPath = aConfile.getProperty("TEST_DATA_PATH");
+		aTestDataPath = getBaseFolder()+File.separator+"TestData"+File.separator+aConfile.getProperty("TEST_DATA_PATH");
 		walmartUrl = aConfile.getProperty("BASE_URL");
 		//DOMConfigurator.configure("log4j.xml");
 		quitBrowserForEachTest = aConfile.getProperty("CLOSE_BROWSER_FOREACH_TEST").toLowerCase();
@@ -161,7 +161,7 @@ public class WalmartTestBase {
 			this.CurentMetho = Method;
 
 			ExcelHandler handler = new ExcelHandler();
-			aTestDataSets = handler.readProperties(Method);
+			aTestDataSets = handler.readProperties(Method,aTestDataPath);
 			counter = 0;
 		}
 

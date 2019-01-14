@@ -1,1 +1,0 @@
-{"uuid":"84c00d09-52fa-4315-8bf9-28bf44e26bfe","name":"com.walmart.ecom.ui.core.WalmartTestBase.tearDown","description":"","start":1547335469873,"stop":1547335470031,"children":["818604c3-33ae-44ee-b826-197b59f68c7b"],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","start":1547335469873,"stop":1547335470031}]}

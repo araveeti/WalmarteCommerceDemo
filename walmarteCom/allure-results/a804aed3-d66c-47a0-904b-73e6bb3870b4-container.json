@@ -1,1 +1,0 @@
-{"uuid":"a804aed3-d66c-47a0-904b-73e6bb3870b4","name":"com.walmart.ecom.ui.core.WalmartTestBase.TestResultAfterTestMethod","description":"","start":1547329938580,"stop":1547329938580,"children":["f87fa124-fb78-48c1-a903-ab91d56eb9db"],"afters":[{"name":"TestResultAfterTestMethod","status":"passed","stage":"finished","description":"","start":1547329938580,"stop":1547329938580}]}

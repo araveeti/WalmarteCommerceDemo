@@ -20,3 +20,86 @@
 13-01-2019 22:59:50 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
 13-01-2019 22:59:56 INFO  CustomAssersion:37 - The Expected Messsage is:true
 13-01-2019 22:59:56 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:07 INFO  HomePage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> id: header-toys]
+13-01-2019 23:21:11 INFO  HomePage:51 - The element[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> id: header-toys] Has been clicked successfully
+13-01-2019 23:21:11 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:11 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:11 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> xpath: //span[text()='Outdoor Play']]
+13-01-2019 23:21:13 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> xpath: //span[text()='Outdoor Play']] Has been clicked successfully
+13-01-2019 23:21:13 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:13 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:13 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> xpath: //span[text()='Swimming Pools & Waterslides']]
+13-01-2019 23:21:16 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> xpath: //span[text()='Swimming Pools & Waterslides']] Has been clicked successfully
+13-01-2019 23:21:16 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:16 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:16 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> xpath: //span[text()='Easy Set Swimming Pools']]
+13-01-2019 23:21:18 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> xpath: //span[text()='Easy Set Swimming Pools']] Has been clicked successfully
+13-01-2019 23:21:18 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:18 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:18 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> link text: Price]
+13-01-2019 23:21:19 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (31809913b1e5c6d8c483cdac75ccc18e)] -> link text: Price] Has been clicked successfully
+13-01-2019 23:21:19 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:19 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:24 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:24 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:24 INFO  ToysSecetionPage:91 - The Items are displayed in Ascending Order by Price and the Test Passed
+13-01-2019 23:21:30 INFO  HomePage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> id: header-toys]
+13-01-2019 23:21:34 INFO  HomePage:51 - The element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> id: header-toys] Has been clicked successfully
+13-01-2019 23:21:34 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:34 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:34 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='Outdoor Play']]
+13-01-2019 23:21:37 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='Outdoor Play']] Has been clicked successfully
+13-01-2019 23:21:37 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:37 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:37 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='Swimming Pools & Waterslides']]
+13-01-2019 23:21:40 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='Swimming Pools & Waterslides']] Has been clicked successfully
+13-01-2019 23:21:40 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:40 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:40 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='Easy Set Swimming Pools']]
+13-01-2019 23:21:42 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='Easy Set Swimming Pools']] Has been clicked successfully
+13-01-2019 23:21:42 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:42 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:42 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //h2[text()='Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package']]
+13-01-2019 23:21:48 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //h2[text()='Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package']] Has been clicked successfully
+13-01-2019 23:21:48 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:48 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:48 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //h1[text()='Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package']]
+13-01-2019 23:21:48 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:48 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:48 INFO  ItemDetailsPage:201 - The Number of Elements to be verified are ....4
+13-01-2019 23:21:48 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //button[@class='button add-to-cart-btn available']]
+13-01-2019 23:21:48 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //h2[text()='Description & Features']]
+13-01-2019 23:21:48 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='Shoppers who viewed this item also viewed']]
+13-01-2019 23:21:48 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (984586e55d5f0a485511a553e6f07ec8)] -> xpath: //span[text()='People with similar interests also bought']]
+13-01-2019 23:21:48 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:48 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:54 INFO  HomePage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> id: header-toys]
+13-01-2019 23:21:58 INFO  HomePage:51 - The element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> id: header-toys] Has been clicked successfully
+13-01-2019 23:21:58 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:21:58 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:21:58 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='Outdoor Play']]
+13-01-2019 23:22:01 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='Outdoor Play']] Has been clicked successfully
+13-01-2019 23:22:01 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:22:01 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:22:01 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='Swimming Pools & Waterslides']]
+13-01-2019 23:22:04 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='Swimming Pools & Waterslides']] Has been clicked successfully
+13-01-2019 23:22:04 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:22:04 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:22:04 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='Easy Set Swimming Pools']]
+13-01-2019 23:22:05 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='Easy Set Swimming Pools']] Has been clicked successfully
+13-01-2019 23:22:05 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:22:05 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:22:05 INFO  ToysSecetionPage:131 - Waiting for the element ::[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //h2[text()='Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover']]
+13-01-2019 23:22:08 INFO  ToysSecetionPage:51 - The element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //h2[text()='Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover']] Has been clicked successfully
+13-01-2019 23:22:08 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:22:08 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:22:09 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //h1[text()='Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover']]
+13-01-2019 23:22:10 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:22:10 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true
+13-01-2019 23:22:10 INFO  ItemDetailsPage:201 - The Number of Elements to be verified are ....4
+13-01-2019 23:22:10 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //button[@class='button add-to-cart-btn available']]
+13-01-2019 23:22:10 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //h2[text()='Description & Features']]
+13-01-2019 23:22:10 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='Shoppers who viewed this item also viewed']]
+13-01-2019 23:22:10 INFO  ItemDetailsPage:167 - Verifying the Presence of Element[[ChromeDriver: chrome on MAC (a2c7f6a071182f24c3c710a1d090203d)] -> xpath: //span[text()='People with similar interests also bought']]
+13-01-2019 23:22:10 INFO  CustomAssersion:37 - The Expected Messsage is:true
+13-01-2019 23:22:10 INFO  CustomAssersion:50 - The Expected Messsage is:true and the Actual Message is +true

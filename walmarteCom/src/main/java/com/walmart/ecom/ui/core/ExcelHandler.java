@@ -28,8 +28,8 @@ public class ExcelHandler {
 	
 	public static Properties aTestData = new Properties();
         
-   public LinkedList<Properties> readProperties(String aMethod) throws IOException{
-        FileInputStream in  = new FileInputStream(new File("/Users/venkat/eclipse-workspace/walmarteCom/TestData/TestData_Items.xlsx"));
+   public LinkedList<Properties> readProperties(String aMethod,String aFile) throws IOException{
+        FileInputStream in  = new FileInputStream(new File(aFile));
         Workbook wb = new XSSFWorkbook(in);
         Sheet sh =  wb.getSheetAt(0);
         System.out.println(sh);

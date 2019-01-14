@@ -1,1 +1,0 @@
-{"uuid":"c340df6b-17ee-46d3-8ec7-e209250f5423","name":"Application","start":1547340561829,"stop":1547340563556,"children":["570ff98c-7d90-42cb-a231-ae01a0ecd56c"],"befores":[{"name":"loadClassConfigurations","status":"passed","stage":"finished","description":"","start":1547340561860,"stop":1547340561928}]}
