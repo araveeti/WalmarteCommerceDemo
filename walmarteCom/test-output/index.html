@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Application">
-              <span class="suite-name border-passed">Application</span>
+              <span class="suite-name border-failed">Application</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Application" class="hide-methods failed suite-Application"> (hide)</a> <!-- hide-methods failed suite-Application -->
+                      <a href="#" panel-name="suite-Application" class="show-methods failed suite-Application"> (show)</a> <!-- show-methods failed suite-Application -->
+                    </span>
+                    <div class="method-list-content failed suite-Application">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Application" title="com.walmart.ecom.ui.tests.ToysSectionTests" hash-for-method="verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})">verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Application" title="com.walmart.ecom.ui.tests.ToysSectionTests" hash-for-method="verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})">verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Application -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,16 +122,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Application" title="com.walmart.ecom.ui.tests.ToysSectionTests" hash-for-method="verifyItemsDisplayedByPrice({})">verifyItemsDisplayedByPrice({})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Application" title="com.walmart.ecom.ui.tests.ToysSectionTests" hash-for-method="verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})">verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Application" title="com.walmart.ecom.ui.tests.ToysSectionTests" hash-for-method="verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})">verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Application -->
@@ -127,6 +136,91 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Application" class="panel Application">
+          <div class="suite-Application-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.walmart.ecom.ui.tests.ToysSectionTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})">
+                  </a> <!-- verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package}) -->
+                  <span class="method-name">verifyProductDetails</span>
+                  <span class="parameters">({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Venkatramanas-MacBook-Air.local&apos;, ip: &apos;2607:fea8:1220:c0b:0:0:0:3&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_q/pzp0ltk52k5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53726}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 447d927ec878b8e40ce88b74f61b2f5a
+*** Element info: {Using=xpath, value=//h1[text()=&apos;Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.walmart.ecom.ui.core.SeleniumMethods$1.apply(SeleniumMethods.java:94)
+	at com.walmart.ecom.ui.core.SeleniumMethods$1.apply(SeleniumMethods.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.walmart.ecom.ui.core.SeleniumMethods.fluentWait(SeleniumMethods.java:92)
+	at com.walmart.ecom.ui.product.pages.ItemDetailsPage.verifyItemName(ItemDetailsPage.java:48)
+	at com.walmart.ecom.ui.tests.ToysSectionTests.verifyProductDetails(ToysSectionTests.java:19)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})">
+                  </a> <!-- verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover}) -->
+                  <span class="method-name">verifyProductDetails</span>
+                  <span class="parameters">({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Outdoor Play&apos;]&quot;}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;Venkatramanas-MacBook-Air.local&apos;, ip: &apos;2607:fea8:1220:c0b:0:0:0:3&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_q/pzp0ltk52k5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54060}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 063ac9f34b29d792738c4f0c9deaa594
+*** Element info: {Using=xpath, value=//span[text()=&apos;Outdoor Play&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.walmart.ecom.ui.core.SeleniumMethods.click(SeleniumMethods.java:50)
+	at com.walmart.ecom.ui.product.pages.ToysSecetionPage.browserToOutDoorPlay(ToysSecetionPage.java:54)
+	at com.walmart.ecom.ui.tests.ToysSectionTests.verifyProductDetails(ToysSectionTests.java:17)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Application-class-failed -->
           <div class="suite-Application-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -139,22 +233,6 @@
                   </a> <!-- verifyItemsDisplayedByPrice({}) -->
                   <span class="method-name">verifyItemsDisplayedByPrice</span>
                   <span class="parameters">({})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})">
-                  </a> <!-- verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package}) -->
-                  <span class="method-name">verifyProductDetails</span>
-                  <span class="parameters">({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})">
-                  </a> <!-- verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover}) -->
-                  <span class="method-name">verifyProductDetails</span>
-                  <span class="parameters">({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,20 +299,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyProductDetails')
 data.setCell(0, 2, 'com.walmart.ecom.ui.tests.ToysSectionTests')
-data.setCell(0, 3, 22520);
+data.setCell(0, 3, 75512);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyItemsDisplayedByPrice')
 data.setCell(1, 2, 'com.walmart.ecom.ui.tests.ToysSectionTests')
-data.setCell(1, 3, 22502);
+data.setCell(1, 3, 24663);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyProductDetails')
 data.setCell(2, 2, 'com.walmart.ecom.ui.tests.ToysSectionTests')
-data.setCell(2, 3, 20660);
+data.setCell(2, 3, 23454);
 window.suiteTableData['Application']= { tableData: data, tableDiv: 'times-div-Application'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Application">
               </div> <!-- times-div-Application -->
             </div> <!-- times-div -->
@@ -267,39 +345,43 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest</span>
-                <span class="method-start">1156 ms</span>
+                <span class="method-start">1134 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyItemsDisplayedByPrice({})</span>
-                <span class="method-start">3448 ms</span>
+                <span class="method-start">4014 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25951 ms</span>
+                <span class="method-start">28679 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest</span>
-                <span class="method-start">26155 ms</span>
+                <span class="method-start">28857 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyProductDetails({itemName=Summer Waves Elite 15-ft Round 48-in Deep Metal Frame Swimming Pool Package})</span>
-                <span class="method-start">27424 ms</span>
+                <span class="method-start">30105 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49945 ms</span>
+                <span class="method-start">53562 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest</span>
-                <span class="method-start">50131 ms</span>
+                <span class="method-start">53691 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyProductDetails({itemName=Intex Development Co. Ltd Intex 8ft Easy Set Swimming Pool Debris Cover})</span>
-                <span class="method-start">51264 ms</span>
+                <span class="method-start">54877 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71925 ms</span>
+                <span class="method-start">130391 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

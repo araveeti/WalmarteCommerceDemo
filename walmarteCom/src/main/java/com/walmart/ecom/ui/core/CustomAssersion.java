@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
@@ -14,11 +15,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.slf4j.LoggerFactory;
 import org.testng.asserts.Assertion;
 import org.testng.asserts.IAssert;
+import org.testng.collections.Lists;
 
 
 //Designing the CustomAssersion by extending the Assersion for readability
 
 public class CustomAssersion extends Assertion{
+	
+	
+	  private List<String> assert_messages = Lists.newArrayList();
+
 	
 	 private WebDriver driver;
 	 
@@ -30,27 +36,35 @@ public class CustomAssersion extends Assertion{
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);
 	    }
+	    
+	    
 	
 		
 		@Override
 		public void onBeforeAssert(IAssert a) {
-			log.info("The Expected Messsage is:"+a.getExpected());
+			
+		      assert_messages.add("BeforeAssert:" + a.getMessage());
 		}
 
 		
 		//On Assert Failure it will take the screen shot
 		@Override
 		public void onAssertFailure(IAssert assertCommand) {
-			log.error("The Expected Messsage is:"+assertCommand.getExpected()+" and the Actual Message is +" +assertCommand.getActual());			
+			log.error("The Expected Messsage is:"+assertCommand.getExpected()+" and the Actual Message is +" +assertCommand.getActual());
+			assert_messages.add("OnlyOnAssertFailure: The Expected Messsage is:"+assertCommand.getExpected()+" and the Actual Message is +" +assertCommand.getActual());
 			takeScreenShot();
 		}
 
 		@Override
 		public void onAssertSuccess(IAssert a) {
 			log.info("The Expected Messsage is:" +a.getExpected()+" and the Actual Message is +" + a.getActual());
+			assert_messages.add("OnlyOnAssertSuccess: Expected Messsage is:" +a.getExpected() +" and the Actual Message is::" + a.getActual());
 
 	}
 		
+		public List<String> getAssertMessages() {
+		      return assert_messages;
+		    }
 	
 		public void takeScreenShot() {
 			  String destDir = "screenshots";

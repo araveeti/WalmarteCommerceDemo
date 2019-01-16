@@ -8,7 +8,7 @@
         <methods>
           <include name="beforeEachTest"/>
           <include name="tearDown"/>
-          <include name="verifyItemsDisplayedByPrice" invocation-numbers="0"/>
+          <include name="verifyProductDetails" invocation-numbers="0 1"/>
           <include name="loadClassConfigurations"/>
         </methods>
       </class> <!-- com.walmart.ecom.ui.tests.ToysSectionTests -->

@@ -46,6 +46,8 @@ public class WalmartTestBase {
 
 	public static WebDriver driver = null;
 	public String walmartUrl = null;
+	
+	CustomAssersion customAssert = null;
 
 	public Properties getPropertiesFromFile(String fileName) throws IOException {
 
@@ -115,6 +117,10 @@ public class WalmartTestBase {
 				}
 
 			}
+			
+			if(isBrowserAlive) {
+				customAssert = new CustomAssersion(driver);
+			}
 
 		}
 
@@ -134,6 +140,8 @@ public class WalmartTestBase {
 			}
 
 		}
+		
+		customAssert.getAssertMessages();
 
 	}
 	
