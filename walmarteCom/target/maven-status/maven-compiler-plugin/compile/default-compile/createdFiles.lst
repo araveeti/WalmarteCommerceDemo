@@ -1,8 +1,10 @@
 com/walmart/ecom/ui/core/CustomAssersion.class
 com/walmart/ecom/ui/core/ExcelHandler.class
 com/walmart/ecom/ui/core/WalmartTestBase$TestDataFaactory.class
-com/walmart/ecom/ui/pages/HomePage.class
+com/walmart/ecom/ui/product/pages/ItemDetailsPage.class
+com/walmart/ecom/ui/product/pages/OutDoorLivingPage.class
+com/walmart/ecom/ui/home/page/HomePage.class
 com/walmart/ecom/ui/core/SeleniumMethods.class
-com/walmart/ecom/ui/pages/AutomotivePage.class
-com/walmart/ecom/ui/pages/AppliancePage.class
+com/walmart/ecom/ui/product/pages/ToysSecetionPage.class
+com/walmart/ecom/ui/core/SeleniumMethods$1.class
 com/walmart/ecom/ui/core/WalmartTestBase.class

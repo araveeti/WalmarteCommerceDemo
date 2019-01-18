@@ -10,6 +10,7 @@ import java.util.LinkedList;
 import java.util.Properties;
 
 import org.apache.commons.logging.Log;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -48,6 +49,8 @@ public class WalmartTestBase {
 	public String walmartUrl = null;
 	
 	CustomAssersion customAssert = null;
+	
+	
 
 	public Properties getPropertiesFromFile(String fileName) throws IOException {
 
@@ -81,7 +84,6 @@ public class WalmartTestBase {
 		aConfile = this.getPropertiesFromFile(configfile);
 		aTestDataPath = getBaseFolder()+File.separator+"TestData"+File.separator+aConfile.getProperty("TEST_DATA_PATH");
 		walmartUrl = aConfile.getProperty("BASE_URL");
-		//DOMConfigurator.configure("log4j.xml");
 		quitBrowserForEachTest = aConfile.getProperty("CLOSE_BROWSER_FOREACH_TEST").toLowerCase();
 	}
 
