@@ -39,7 +39,7 @@ public class ToysSecetionPage extends SeleniumMethods {
 
 	@FindBy(xpath = "//div[@class='price-current']/div")
 	private List<WebElement> txtPrice;
-
+	
 	// Initialize the Elements using Page Factory
 
 	public ToysSecetionPage(WebDriver driver) {
@@ -95,12 +95,7 @@ public class ToysSecetionPage extends SeleniumMethods {
 
 	public ToysSecetionPage verifyItemsPriceAscendingOrder() {
 		clickPriceLink();
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		waitForAjaxToComplete();
 		verifyItemsPrice();
 		return this;
 	}

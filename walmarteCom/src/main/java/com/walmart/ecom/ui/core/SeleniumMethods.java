@@ -33,7 +33,6 @@ public class SeleniumMethods {
 
 	protected org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
-
 	public CustomAssersion assersion;
 
 	public SeleniumMethods(WebDriver driver) {
@@ -48,7 +47,7 @@ public class SeleniumMethods {
 		try {
 			waitForElementClickable(objElement);
 			objElement.click();
-			 log.info("The element" + objElement + " Has been clicked successfully");
+			log.info("The element" + objElement + " Has been clicked successfully");
 			isVerify = true;
 		} catch (IllegalArgumentException e) {
 			// log.error(" Exception is thrown at run time");
@@ -65,8 +64,7 @@ public class SeleniumMethods {
 			waitForElementClickable(objElement);
 			objElement.clear();
 			objElement.sendKeys(sTextToSend);
-			 log.info("The Text is entered Successfully into the Text Box::" +
-			 objElement);
+			log.info("The Text is entered Successfully into the Text Box::" + objElement);
 			isVerify = true;
 
 		} catch (IllegalArgumentException e) {
@@ -75,8 +73,7 @@ public class SeleniumMethods {
 
 		} catch (Exception e) {
 			// log.error("Time out Exception is thrown at run time ");
-				throw e;
-			
+			throw e;
 
 		}
 
@@ -103,11 +100,11 @@ public class SeleniumMethods {
 		boolean isVerify = false;
 		try {
 			driver.quit();
-			 log.info("Successfully closed the Browser ");
+			log.info("Successfully closed the Browser ");
 			isVerify = true;
 		} catch (Exception e) {
 
-			 log.error("An Exception is thrown at run time");
+			log.error("An Exception is thrown at run time");
 			throw e;
 
 		}
@@ -128,13 +125,13 @@ public class SeleniumMethods {
 	 */
 	public boolean waitForElementClickable(WebElement objElement) {
 		boolean isVerify = false;
-		 log.info("Waiting for the element ::" + objElement);
+		log.info("Waiting for the element ::" + objElement);
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 60);
 			wait.until(ExpectedConditions.elementToBeClickable(objElement));
 			isVerify = true;
 		} catch (Exception e) {
-			 log.error("Exception is thrown at run time and the test Fails");
+			log.error("Exception is thrown at run time and the test Fails");
 			isVerify = false;
 		}
 		return isVerify;
@@ -146,16 +143,52 @@ public class SeleniumMethods {
 	 * 
 	 */
 
-	public boolean verifyElementPresence(WebElement objElement, String aText) {
+	public boolean verifyElementPresenceWithText(WebElement objElement, String aText) {
 		boolean isVerify = false;
-		 log.info("Verifying the Presence of Element" + objElement);
+		log.info("Verifying the Presence of Element" + objElement);
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 60);
 			wait.until(ExpectedConditions.textToBePresentInElement(objElement, aText));
 			isVerify = true;
 		} catch (Exception e) {
-			 log.error(
-			 "Exception is thrown at run time while verifying the presence of Element wit Text and the test Fails");
+			log.error(
+					"Exception is thrown at run time while verifying the presence of Element wit Text and the test Fails");
+			isVerify = false;
+		}
+		return isVerify;
+
+	}
+
+	@SuppressWarnings("deprecation")
+	public void waitForAjaxToComplete() {
+		FluentWait<WebDriver> fluentWait = new FluentWait<>(driver);
+		fluentWait.withTimeout(20, TimeUnit.SECONDS).pollingEvery(300, TimeUnit.MILLISECONDS)
+				.until(new Function<WebDriver, Boolean>() {
+					@Override
+					public Boolean apply(WebDriver input) {
+						Boolean isJqueryComplete = (Boolean) ((JavascriptExecutor) driver)
+								.executeScript("return jQuery.active==0");
+
+						if (isJqueryComplete) {
+							log.info("The Ajax calls are completed!!!");
+							return true;
+						} else {
+							return false;
+						}
+					}
+				});
+	}
+
+	public boolean verifyElementPresence(WebElement objElement, int timeOut) {
+		boolean isVerify = false;
+		log.info("Verifying the Presence of Element" + objElement);
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timeOut);
+			wait.until(ExpectedConditions.visibilityOf(objElement));
+			isVerify = true;
+		} catch (Exception e) {
+			log.error(
+					"Exception is thrown at run time while verifying the presence of Element with Text and the test Fails");
 			isVerify = false;
 		}
 		return isVerify;
@@ -164,14 +197,30 @@ public class SeleniumMethods {
 
 	public boolean verifyElementPresence(WebElement objElement) {
 		boolean isVerify = false;
-		 log.info("Verifying the Presence of Element" + objElement);
+		log.info("Verifying the Presence of Element" + objElement);
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.visibilityOf(objElement));
 			isVerify = true;
 		} catch (Exception e) {
-			 log.error(
-			 "Exception is thrown at run time while verifying the presence of Element with Text and the test Fails");
+			log.error(
+					"Exception is thrown at run time while verifying the presence of Element with Text and the test Fails");
+			isVerify = false;
+		}
+		return isVerify;
+
+	}
+
+	public boolean verifyElementNot(WebElement objElement, int aTimeOut) {
+		boolean isVerify = false;
+		log.info("Verifying the Presence of Element" + objElement);
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, aTimeOut);
+			wait.until(ExpectedConditions.invisibilityOf(objElement));
+			isVerify = true;
+		} catch (Exception e) {
+			log.error(
+					"Exception is thrown at run time while verifying the presence of Element with Text and the test Fails");
 			isVerify = false;
 		}
 		return isVerify;
@@ -180,30 +229,29 @@ public class SeleniumMethods {
 
 	public boolean clickByJavaScript(WebElement objElement) {
 		boolean isVerify = false;
-		 log.info("Verifying the Presence of Element" + objElement);
+		log.info("Verifying the Presence of Element" + objElement);
 		try {
 
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", objElement);
 			isVerify = true;
 		} catch (Exception e) {
-			log.error(
-			"Exception is thrown at run time while clicking the Element and the Test Fails");
+			log.error("Exception is thrown at run time while clicking the Element and the Test Fails");
 			isVerify = false;
 		}
 		return isVerify;
 
 	}
 
-	public boolean verifyElementsPresence(WebElement ... ele) {
+	public boolean verifyElementsPresence(WebElement... ele) {
 
 		boolean isVerify = false;
-		log.info("The Number of Elements to be verified are ...."+ele.length);
+		log.info("The Number of Elements to be verified are ...." + ele.length);
 		try {
 			for (WebElement element : ele) {
 				this.verifyElementPresence(element);
 			}
-			
+
 			isVerify = true;
 		} catch (Exception e) {
 			isVerify = false;
